@@ -1,0 +1,91 @@
+#to-do-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --font-family-styled: "Sacramento", cursive;
+  --Box-shadow-outside: -5px -5px 20px rgba(255, 255, 255, 0.849),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  --Box-shadow-inside: inset -5px -5px 9px rgba(255, 255, 255, 0.647),
+    inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+
+body {
+  background-color: #ececec;
+}
+
+.main {
+  box-shadow: var(--Box-shadow-outside);
+  width: 25%;
+  height: 40%;
+  padding: 10px 0;
+  margin: 200px auto;
+  width: 350px;
+  height: 40vh;
+  border-top: 9px solid black;
+  overflow: auto;
+}
+
+.clear-completed {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background: #f7f7f7;
+  border: 1px solid #8f8e8e;
+}
+
+.add-submit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-add {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.fa {
+  display: flex;
+  align-self: center;
+}
+
+.add-list {
+  border: none;
+  width: 80%;
+  font-style: italic;
+  padding: 10px;
+}
+
+.to-do-item {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 23fr 0fr;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.hidden {
+  display: none;
+}
+
+.check-button {
+  background-color: transparent;
+  border: 2px solid #c1c1c3;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  transition: border 0.3s;
+}
+
+.submit {
+  padding: 0;
+}
